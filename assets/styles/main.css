@@ -1,0 +1,220 @@
+footer {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100%;
+  justify-items: start;
+  grid-template-areas: "footer";
+}
+footer .footer1 {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+footer .footer1 .redes1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+}
+footer .footer1 .redes {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+}
+footer .footer1 .redes3 {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+}
+
+@media (min-width: 600px) {
+  footer .footer1 .redes1 {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+  }
+  footer .footer1 .redes {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+  }
+  footer .footer1 .redes3 {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+  }
+}
+@font-face {
+  font-family: Graffiti Regular;
+  src: url(assets/fuentes/Graffiti.ttf) format(".tff");
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.76);
+}
+.container header {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100%;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "gato-logo";
+  margin-top: 10%;
+}
+.container header .logo {
+  grid-area: gato-logo;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container header .logo .gato-logo1 {
+  width: 75px;
+  height: 75px;
+}
+.container header .logo .gato-logo2 {
+  width: 75px;
+  height: 75px;
+}
+.container header .logo .gato-logo3 {
+  width: 75px;
+  height: 75px;
+}
+.container a {
+  text-decoration: none;
+  color: black;
+}
+.container h2 {
+  font-family: Graffiti Regular;
+  font-size: 12px;
+  text-decoration: underline;
+  margin-left: 46%;
+  margin-top: 5%;
+}
+.container .artist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  font-family: Graffiti Regular;
+  margin-top: 3%;
+}
+.container .artist .artist1 {
+  height: 25px;
+  width: 25px;
+  font-size: 12px;
+}
+.container .artist .artist1 .icono1 {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+}
+.container .artist .artist2 {
+  height: 25px;
+  width: 25px;
+  font-size: 12px;
+}
+.container .artist .artist2 .icono2 {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+}
+
+.cuerpo-pibe {
+  background-color: black;
+  font-family: Graffiti Regular;
+}
+.cuerpo-pibe .gatologo {
+  height: 10vh;
+  width: 10vh;
+  border-radius: 100%;
+}
+.cuerpo-pibe #carouselExample .carousel-inner .pag1 {
+  width: 800px;
+  height: 1200;
+}
+.cuerpo-pibe #carouselExample .carousel-inner .pag2 {
+  width: 800px;
+  height: 1200;
+}
+.cuerpo-pibe #carouselExample .carousel-inner .pag3 {
+  width: 800px;
+  height: 1200;
+}
+.cuerpo-pibe .pibe-general {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100%;
+  justify-items: center;
+  align-items: flex-start;
+  grid-template-areas: "descripcion";
+  margin-top: 5%;
+}
+.cuerpo-pibe .pibe-general .descripcion {
+  grid-area: descripcion;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 3%;
+}
+.cuerpo-pibe .pibe-general .descripcion .pibe1 {
+  height: 450px;
+  width: 350px;
+}
+.cuerpo-pibe .pibe-general .descripcion .pibe2 {
+  background-color: wheat;
+  font-size: 15px;
+  padding: 10px;
+  width: 600px;
+  height: 300px;
+}
+
+@media (min-width: 600px) {
+  .container h2 {
+    font-size: 25px;
+  }
+  .container header .logo .gato-logo1 {
+    width: 150px;
+    height: 150px;
+  }
+  .container header .logo .gato-logo2 {
+    width: 150px;
+    height: 150px;
+  }
+  .container header .logo .gato-logo3 {
+    width: 150px;
+    height: 150px;
+  }
+  .container .artist .artist1 {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+  }
+  .container .artist .artist1 .icono1 {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+  }
+  .container .artist .artist2 {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+  }
+  .container .artist .artist2 .icono2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+  }
+  .cuerpo-pibe .pibe-general .descripcion .pibe1 {
+    height: 225px;
+    width: 175px;
+  }
+  .cuerpo-pibe .pibe-general .descripcion .pibe2 {
+    width: 300px;
+    height: 300px;
+  }
+  #carouselExample .carousel-inner carousel-item active .pag1 {
+    height: 800px;
+    width: 600px;
+  }
+}/*# sourceMappingURL=main.css.map */

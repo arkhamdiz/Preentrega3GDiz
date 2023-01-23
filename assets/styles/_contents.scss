@@ -1,0 +1,255 @@
+@font-face {
+    font-family:Graffiti Regular;
+    src: url(assets/fuentes/Graffiti.ttf) format('.tff');
+}
+
+
+.container{
+    background-color:rgba(0, 0, 0, 0.76);
+
+    header{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:100%;
+        align-items: center;
+        justify-items: center;
+        grid-template-areas:
+        "gato-logo";
+        margin-top:10%;
+
+        .logo{
+            grid-area: gato-logo;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-around;
+
+
+            .gato-logo1{
+                width: 75px;
+                height: 75px;     
+            }
+            .gato-logo2{               
+                width: 75px;
+                height: 75px;
+            }
+            
+            .gato-logo3{
+                width: 75px;
+                height: 75px;
+            }
+        }    
+    }
+
+    
+    
+    a{
+        text-decoration: none;
+        color:black;
+    }
+    
+    h2{
+        font-family: Graffiti Regular;
+        font-size: 12px;
+        text-decoration:underline;
+        margin-left: 46%;
+        margin-top:5%;
+
+    }
+    .artist{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items:center;
+        gap:20%;
+        font-family: Graffiti Regular;
+        margin-top: 3%;
+    
+        .artist1{
+            height: 25px;
+            width: 25px;
+            font-size: 12px;
+            .icono1{
+                height: 25px;
+                width: 25px;
+                border-radius: 100%;
+            }
+        }
+    
+        .artist2{
+            height: 25px;
+            width: 25px;
+            font-size: 12px;
+            
+            .icono2{
+                height: 25px;
+                width: 25px;
+                border-radius: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+.cuerpo-pibe{
+    background-color: black;
+    font-family: Graffiti Regular;
+
+
+    .gatologo{
+        height: 10vh;
+        width: 10vh;
+        border-radius: 100%;
+    }
+
+    #carouselExample{
+        .carousel-inner{
+            
+            .pag1{
+                width: 800px;
+                height: 1200;
+            }
+            .pag2{
+                width: 800px;
+                height: 1200;
+            }
+            .pag3{
+                width: 800px;
+                height: 1200;
+            }
+        }
+    }
+
+    
+
+
+    .pibe-general{
+        display:grid;
+        grid-template-columns:auto;
+        grid-template-rows:100%;
+        justify-items: center;
+        align-items:flex-start;
+        grid-template-areas:
+        "descripcion";
+        margin-top:5%;
+        
+        .descripcion{
+         grid-area:descripcion;
+         display:flex;
+         flex-direction:row;
+         justify-content: space-around;
+         gap:3%;
+
+            .pibe1{
+                height: 450px;
+                width: 350px;
+            }
+        
+            .pibe2{
+                background-color: wheat;
+                font-size: 15px;
+                padding:10px;
+                width: 600px;
+                height: 300px;
+                
+
+            }
+        }
+    }
+}
+
+
+@media (min-width:600px){
+
+    .container{
+        
+
+        h2{
+            font-size: 25px;
+        }
+
+        header{
+
+            .logo{
+                .gato-logo1{
+                    width: 150px;
+                    height: 150px;     
+                }
+                .gato-logo2{               
+                    width: 150px;
+                    height: 150px;
+                }
+                
+                .gato-logo3{
+                    width: 150px;
+                    height: 150px;
+                }
+            
+            }
+
+        }
+
+        .artist{
+            .artist1{
+                height: 50px;
+                width: 50px;
+                font-size: 25px;
+                .icono1{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 100%;
+                }
+             }
+        
+             .artist2{
+                height: 50px;
+                width: 50px;
+                font-size: 25px;
+                
+                .icono2{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 100%;
+                }
+             }
+
+            }
+
+        
+    
+    }
+
+    .cuerpo-pibe{
+        .pibe-general{
+            .descripcion{
+                .pibe1{
+                    height: 225px;
+                    width: 175px
+                }
+    
+                .pibe2{
+                    width:300px;
+                    height: 300px;
+                }
+            }
+        }
+
+        
+    }
+
+    #carouselExample{
+        .carousel-inner{
+            carousel-item active{
+                .pag1{
+                    height: 800px;
+                    width: 600px;
+                }
+            }
+        }
+    }
+
+
+
+}
+
